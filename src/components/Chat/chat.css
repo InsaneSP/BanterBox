@@ -1,0 +1,204 @@
+.chat {
+    flex: 2 !important;
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    font-family: "Roboto", sans-serif !important;
+    color: white !important;
+    overflow-x: hidden !important;
+
+    .top {
+        background-color: #3a3a3aa8 !important;
+        padding: 20px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        border-bottom: 1px solid black !important;
+
+        .user {
+            display: flex !important;
+            align-items: center !important;
+            gap: 20px !important;
+
+            img {
+                width: 50px !important;
+                height: 50px !important;
+                border-radius: 50% !important;
+                object-fit: cover !important;
+            }
+
+            .texts {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 5px !important;
+
+                span {
+                    font-size: 25px !important;
+                    font-weight: bold !important;
+                    color: rgb(255, 255, 255) !important;
+                    font-family: "RogueHeroOutline-BWWJ5.otf" !important;
+                }
+
+                p {
+                    font-size: 14px !important;
+                    font-weight: 300 !important;
+                    color: rgb(255, 255, 255) !important;
+                }
+            }
+        }
+
+        .icons {
+            display: flex !important;
+            gap: 30px !important;
+        }
+    }
+
+    .center {
+        padding: 20px !important;
+        flex: 1 !important;
+        overflow: scroll !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+
+        .message {
+            max-width: 60% !important;
+            display: flex !important;
+            gap: 20px !important;
+            align-self: flex-start;
+
+            &.own {
+                align-self: flex-end !important;
+
+                .texts {
+                    p {
+                        background-color: #8b0000 !important;
+                        color: white !important;
+                        box-shadow: inset 5px 5px 10px 0 #3f0000,
+                            inset -6px -6px 10px 0 rgba(247, 243, 243, 0.349) !important;
+                    }
+                }
+            }
+
+            img {
+                width: 30px !important;
+                height: 30px !important;
+                border-radius: 50% !important;
+                object-fit: cover !important;
+            }
+
+            .texts {
+                flex: 1 !important;
+                display: flex !important;
+                flex-direction: column !important;
+
+                img {
+                    width: 100% !important;
+                    height: 300px !important;
+                    border-radius: 10px !important;
+                    object-fit: cover !important;
+                }
+
+                p {
+                    padding: 20px !important;
+                    background-color: #ffcc00b7 !important;
+                    border-radius: 10px !important;
+                    color: #000000 !important;
+                    box-shadow: inset 5px 5px 10px 0 #3a3800,
+                        inset -6px -6px 10px 0 rgba(255, 255, 255, 0.322) !important;
+                }
+
+                span {
+                    font-size: 13px !important;
+                    color: #e0e0e0 !important;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        padding: 20px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        border-top: 1px solid rgb(0, 0, 0) !important;
+        gap: 20px !important;
+        margin-top: auto !important;
+        background-color: #3a3a3aa8 !important;
+
+        .icons {
+            display: flex !important;
+            gap: 20px !important;
+            cursor: pointer !important;
+        }
+
+        .emoji {
+            position: relative !important;
+        
+            .picker {
+                position: absolute !important;
+                bottom: 72px !important; 
+                left: 20% !important; 
+                transform: translateX(-50%) !important; 
+                background-color: rgba(255, 255, 255, 0.9) !important; 
+                border-radius: 10px !important; 
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important; 
+            }
+        }        
+    }
+
+    .inpt {
+        background-color: #3a3a3a !important;
+        border: none !important;
+        outline: none !important;
+        color: white !important;
+        flex: 1 !important;
+        padding: 20px !important;
+        border-radius: 10px !important;
+        font-size: 16px !important;
+        box-shadow: inset 5px 5px 10px 0 #030000e0,
+            inset -6px -6px 10px 0 rgba(247, 243, 243, 0.205) !important;
+    }
+
+    ::placeholder {
+        color: white !important;
+    }
+
+    .sendButton {
+        background-color: #8b0000 !important;
+        padding: 20px 30px !important;
+        border: none !important;
+        border-radius: 20px !important;
+        cursor: pointer !important;
+        color: white !important;
+        box-shadow: inset 5px 5px 10px 0 #3f0000e0,
+            inset -6px -6px 10px 0 rgba(247, 243, 243, 0.425) !important;
+    }
+
+    img {
+        width: 80px !important;
+        height: 70px !important;
+    }
+}
+
+.block-button {
+    padding: 10px 20px !important;
+    background-color: #d50000 !important;
+    color: white !important;
+    border: 2px solid #000 !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+
+    &:hover {
+        background-color: #ff3d00 !important;
+        transform: scale(1.05) !important;
+    }
+
+    &:active {
+        transform: scale(0.95) !important;
+    }
+}

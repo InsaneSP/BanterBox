@@ -1,0 +1,84 @@
+::-webkit-scrollbar {
+    width: 15px !important;
+    background-color: #0000003a !important;
+    border-top-left-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a !important;
+    border-radius: 10px !important;
+    border: 1px solid black !important;
+}
+
+.Chatlist {
+    flex: 1 !important;
+    overflow: scroll !important;
+    overflow-x: hidden !important;
+    font-family: "Roboto", sans-serif !important;
+
+    .search {
+        display: flex !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding: 20px !important;
+    }
+
+    .searchBar {
+        flex: 1 !important;
+        background-color: #3a3a3a !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 20px !important;
+        border-radius: 10px !important;
+        padding: 10px !important;
+    }
+
+    ::placeholder {
+        color: white !important;
+    }
+
+    input {
+        background-color: transparent !important;
+        border: none !important;
+        outline: none !important;
+        color: #000000 !important;
+        flex: 1 !important;
+        color: white !important;
+    }
+
+    .item {
+        display: flex !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding: 20px !important;
+        cursor: pointer !important;
+        border-bottom: 1px solid rgb(97, 95, 95) !important;
+
+        img {
+            width: 50px !important;
+            height: 50px !important;
+            border-radius: 50% !important;
+            object-fit: cover !important;
+        }
+
+        .texts {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 10px !important;
+            color: white;
+
+            span {
+                font-weight: 550 !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                font-weight: 300 !important;
+            }
+        }
+    }
+}
+
+.icons{
+    color: white;
+}

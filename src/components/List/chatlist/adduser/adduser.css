@@ -1,0 +1,72 @@
+.adduser {
+    width: max-content !important;
+    height: max-content !important;
+    padding: 30px !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 10px !important;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+    background-image: url('deadpoolheart1.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.adduser form {
+    display: flex !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+    background-color: transparent !important;
+    flex-direction: row !important;
+}
+
+.adduser form input {
+    padding: 20px !important;
+    border-radius: 10px !important;
+    border: none !important;
+    outline: none !important;
+    background-color: rgba(0, 0, 5, 0.815) !important;
+    box-shadow: 5px 5px rgb(29, 29, 58) !important;
+}
+
+.adduser form button {
+    padding: 20px !important;
+    border-radius: 10px !important;
+    color: white !important;  
+    border: none !important;
+    cursor: pointer !important;
+    background-color: rgba(0, 0, 5, 0.815) !important;
+    box-shadow: 5px 5px rgb(29, 29, 58) !important;
+}
+
+.adduser .user {
+    margin-top: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.adduser .user .detail {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+    font-size: 25px !important;
+    color: white;
+}
+
+.adduser .user .detail img {
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 50px !important;
+    object-fit: cover !important;
+}
+
+.adduser .user button {
+    padding: 10px !important;
+    border-radius: 10px !important;
+    border: none !important;
+    cursor: pointer !important;
+}

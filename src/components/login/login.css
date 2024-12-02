@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+.fullscreen {
+    background: linear-gradient(135deg, #434343 0%, #000000 100%) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    flex-direction: column !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+/* img{
+    height: 150px;
+    width: 200px;
+} */
+
+.login-heading {
+    font-weight: bold !important;
+    margin: 0 !important;
+    color: #FF4747 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7) !important;
+}
+
+.subtext {
+    font-size: 15px !important;
+    font-weight: 100 !important;
+    line-height: 20px !important;
+    letter-spacing: 0.5px !important;
+    margin: 20px 0 30px !important;
+    color: #f6f5f7 !important;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.subheading {
+    font-size: 12px !important;
+    color: #FFDB58 !important; 
+}
+
+a {
+    color: #FFDB58 !important; 
+    font-size: 14px !important;
+    text-decoration: none !important;
+    margin: 15px 0 !important;
+}
+
+.login-button {
+    border-radius: 20px !important;
+    border: 1px solid #FF4747 !important; 
+    background-color: #FF4747 !important; 
+    color: #ffffff !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding: 12px 45px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    transition: transform 80ms ease-in, background-color 0.3s, border 0.3s !important;
+}
+
+.login-button:hover {
+    background-color: #d41d1d !important; 
+    border-color: #d41d1d !important; 
+}
+
+button:disabled {
+    cursor: not-allowed !important;
+    background-color: #f4a560a6 !important;
+}
+
+button:active {
+    transform: scale(0.95) !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+button.ghost {
+    background-color: transparent !important;
+    border: 2px solid #ffffff !important; 
+    color: #ffffff !important;
+    transition: background-color 0.3s, color 0.3s !important; 
+}
+
+button.ghost:hover {
+    background-color: rgba(66, 4, 4, 0.2) !important;
+    color: #FF4747 !important; 
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+form {
+    background-color: #444444 !important; 
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    padding: 20px !important; 
+    height: 100% !important;
+    text-align: center !important;
+    margin: 10px !important;
+}
+
+.form-container h1,
+.form-container span,
+.form-container button {
+    margin: 10px !important;
+}
+
+.input {
+    background-color: #fff !important;
+    padding: 12px 15px !important;
+    margin: 8px 0 !important;
+    width: 100% !important;
+    border-radius: 10px !important;
+    outline: none !important;
+    transition: border 0.3s !important;
+    color: #333;
+}
+
+.input:focus {
+    box-shadow: 0 0 5px rgba(244, 164, 96, 0.5) !important;
+}
+
+.container {
+    height: 45rem !important;
+    background-color: #444444 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    width: 768px !important;
+    max-width: 100% !important;
+    min-height: 480px !important;
+}
+
+.form-container {
+    position: absolute !important;
+    top: 0 !important;
+    height: 100% !important;
+    transition: all 0.6s ease-in-out !important;
+}
+
+.sign-up-container {
+    left: 0 !important;
+    width: 50% !important;
+    z-index: 2 !important;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%) !important;
+}
+
+.sign-in-container {
+    left: 0 !important;
+    width: 50% !important;
+    opacity: 0 !important;
+    z-index: 1 !important;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%) !important;
+    opacity: 1 !important;
+    z-index: 5 !important;
+    animation: show 0.6s !important;
+}
+
+@keyframes show {
+    0%,
+    49.99% {
+        opacity: 0 !important;
+        z-index: 1 !important;
+    }
+    50%,
+    100% {
+        opacity: 1 !important;
+        z-index: 5 !important;
+    }
+}
+
+.overlay-container {
+    position: absolute !important;
+    top: 0 !important;
+    left: 50% !important;
+    width: 50% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    transition: transform 0.6s ease-in-out !important;
+    z-index: 100 !important;
+}
+
+.overlay-container h1 {
+    color: #f6f5f7 !important;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black !important;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%) !important;
+}
+
+.overlay {
+    background: #000 !important;
+    color: #ffffff !important;
+    position: relative !important;
+    left: -100% !important;
+    height: 100% !important;
+    width: 200% !important;
+    transform: translateX(0) !important;
+    transition: transform 0.6s ease-in-out !important;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%) !important;
+}
+
+.overlay-panel {
+    position: absolute !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    padding: 0 40px !important;
+    text-align: center !important;
+    top: 0 !important;
+    height: 100% !important;
+    width: 50% !important;
+    transform: translateX(0) !important;
+    transition: transform 0.6s ease-in-out !important;
+}
+
+.overlay-left {
+    background-image: url('Deadpool.jfif') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    color: #fff !important;
+    transform: translateX(-20%) !important;
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0) !important;
+}
+
+.overlay-right {
+    background-image: url('Wolverine.jfif') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    color: #fff !important;
+    right: 0 !important;
+    transform: translateX(0) !important;
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%) !important;
+}
+
+.image-preview {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+}
+
+.image-preview img {
+    max-height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    border: 1px solid #ccc !important;
+    margin-top: 10px !important;
+}
+
+.custom-file-upload {
+    display: block !important;
+    width: 320px !important;
+    padding: 12px 15px !important;
+    border: 1px solid #eee !important;
+    border-radius: 10px !important;
+    background-color: #eee !important;
+    color: #333 !important;
+    font-size: 13px !important;
+    cursor: pointer !important;
+    margin-top: 8px !important;
+    text-align: left !important;
+}
+
+.photo {
+    display: none !important;
+}
+
+.password-reset {
+    height: 45rem !important;
+    background-image: url('DeadpoolRegenration.gif');
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    border-radius: 10px !important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) !important;
+    overflow: hidden !important;
+    width: 768px !important;
+}
+
+.password-reset h2 {
+    color: #f6f5f7 !important;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    text-align: center !important;
+    margin-top: 300px !important;
+}
+
+.password-reset input {
+    background-color: #fff !important;
+    padding: 12px 15px !important;
+    margin: 8px 0 !important;
+    width: 300px !important;
+    border-radius: 10px !important;
+    transition: border 0.3s !important;
+    color: #333;
+}
+
+.password-reset button {
+    border-radius: 20px !important; 
+    border: 1px solid #FF4747 !important; 
+    background-color: #FF4747 !important;
+    color: #ffffff !important;
+    padding: 12px 45px !important;
+    transition: background-color 0.3s, border 0.3s !important;
+}
+
+.password-reset button:hover {
+    background-color: #d41d1d !important;
+    border-color: #d41d1d !important;
+}
+
+.passform{
+    background-color: transparent !important;
+    height: auto !important;
+}
+
+.success{
+    color: #1eff00 !important;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    text-align: center !important;
+    margin-top: 100px !important;
+    font-size: 20px;
+}
+
+.btn-back {
+    color: #f6f5f7 !important;
+    margin: 20px 20px !important;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black !important;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.btn-back:hover {
+    color: #FF4747 !important;
+}

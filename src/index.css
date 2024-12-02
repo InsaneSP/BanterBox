@@ -1,0 +1,37 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100vh !important;
+  color: rgb(7, 0, 0) !important;
+  background-image: url('bg2.jpg') !important;
+  background-size: cover !important;
+}
+
+.chat-container {
+  width: 80vw !important;
+  height: 90vh !important;
+  background-color: rgba(0, 0, 0, 0.473) !important;
+  backdrop-filter: blur !important;
+  border-radius: 12px !important;
+  border: 1px solid !important;
+  display: flex !important;
+  border: none !important;
+}
+
+.loading {
+  padding: 50px !important;
+  font-size: 36px !important;
+  border-radius: 10px !important;
+}
+
+@font-face {
+  font-family: 'RogueHeroOutline-BWWJ5.otf';
+  src: url('./fonts/RogueHeroOutline-BWWJ5.otf');
+}

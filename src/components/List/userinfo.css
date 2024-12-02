@@ -1,0 +1,31 @@
+.userinfo {
+    padding: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    color: #fff !important;
+}
+
+.user {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+.user h2{
+    font-family: "RogueHeroOutline-BWWJ5.otf" !important;
+}
+
+.user img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+.icons {
+    display: flex !important;
+    gap: 20px !important;
+}
